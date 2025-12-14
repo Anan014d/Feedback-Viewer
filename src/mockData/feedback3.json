@@ -1,0 +1,34 @@
+{
+  "clean_text": "The pricing details were confusing and not clearly explained.",
+  "summary": "Unclear pricing information",
+  "language": "en",
+  "confidence": 0.86,
+  "reasons": [
+    {
+      "reason_label": "Pricing Transparency",
+      "confidence": 0.81,
+      "extracted_reason_text": "The charges were not clearly explained on the website.",
+      "reason_intent": "confusion",
+      "theme": "Pricing",
+      "sentiment_score": -0.2,
+      "emotions": {
+        "confusion": 0.6,
+        "neutral": 0.4
+      },
+      "evidence": ["Hidden charges", "Unclear breakdown"],
+      "suggested_action": "Improve pricing clarity on website",
+      "entities": [
+        {
+          "extracted_entity_text": "pricing page",
+          "canonical_entity_label": "Pricing Information",
+          "entity_category": "Web Page",
+          "match_score": 0.89
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "human_review_needed": false,
+    "trigger_reasons": ["Pricing ambiguity"]
+  }
+}

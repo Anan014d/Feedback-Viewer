@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1f2937; /* dark grey background (Tailwind gray-800) */
+  --foreground: #e5e7eb; /* light text for contrast */
+
+  /* Brand palette (user-specified) */
+  --color-primary: #ff1e00; /* Brightly Orange */
+  --color-accent: #e8f9fd; /* Dimly Blue (light) */
+  --color-success: #59ce8f; /* Alert/Highlight Green */
 }
 
 @theme inline {
@@ -14,8 +19,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0f172a; /* slightly darker for system dark mode */
+    --foreground: #f8fafc;
   }
 }
 
@@ -23,4 +28,47 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Utility classes mapped to design tokens */
+.bg-brand {
+  background-color: var(--color-primary);
+}
+.text-brand {
+  color: var(--color-primary);
+}
+.bg-accent-light {
+  background-color: var(--color-accent);
+}
+.text-accent {
+  color: var(--color-accent);
+}
+.bg-success {
+  background-color: var(--color-success);
+}
+.text-success {
+  color: var(--color-success);
+}
+.border-accent {
+  border-color: var(--color-accent);
+}
+
+/* small helpers for badge contrast */
+.badge-on-accent {
+  color: #042038;
+} /* dark text on light accent */
+.badge-on-success {
+  color: #052510;
+} /* dark text on success */
+
+/* Focus ring helper for keyboard accessibility */
+.focus-ring:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Heatmap tile focus visual */
+.heatmap-tile:focus {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  transform: translateY(-2px);
 }

@@ -1,0 +1,34 @@
+{
+  "clean_text": "The app looks good but crashes sometimes during checkout.",
+  "summary": "Good UI but unstable app performance",
+  "language": "en",
+  "confidence": 0.9,
+  "reasons": [
+    {
+      "reason_label": "App Stability",
+      "confidence": 0.85,
+      "extracted_reason_text": "The app crashes frequently during checkout.",
+      "reason_intent": "complaint",
+      "theme": "Technology",
+      "sentiment_score": -0.5,
+      "emotions": {
+        "frustration": 0.7,
+        "disappointment": 0.3
+      },
+      "evidence": ["Crash during payment", "App freezes on checkout"],
+      "suggested_action": "Fix checkout flow stability",
+      "entities": [
+        {
+          "extracted_entity_text": "mobile app",
+          "canonical_entity_label": "Application",
+          "entity_category": "Software",
+          "match_score": 0.92
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "human_review_needed": true,
+    "trigger_reasons": ["App crash", "Checkout failure"]
+  }
+}

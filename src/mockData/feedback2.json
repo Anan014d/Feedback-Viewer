@@ -1,0 +1,34 @@
+{
+  "clean_text": "Customer support resolved my issue quickly and politely.",
+  "summary": "Fast and polite customer support",
+  "language": "en",
+  "confidence": 0.95,
+  "reasons": [
+    {
+      "reason_label": "Customer Support",
+      "confidence": 0.93,
+      "extracted_reason_text": "The support agent was polite and resolved the issue within minutes.",
+      "reason_intent": "praise",
+      "theme": "Support",
+      "sentiment_score": 0.8,
+      "emotions": {
+        "joy": 0.7,
+        "trust": 0.3
+      },
+      "evidence": ["Quick response", "Issue resolved in first call"],
+      "suggested_action": "Maintain current support quality",
+      "entities": [
+        {
+          "extracted_entity_text": "support agent",
+          "canonical_entity_label": "Customer Support",
+          "entity_category": "Human",
+          "match_score": 0.94
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "human_review_needed": false,
+    "trigger_reasons": []
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "clean_text": "The delivery was late and the packaging was damaged.",
+  "summary": "Late delivery with damaged packaging",
+  "language": "en",
+  "confidence": 0.92,
+  "reasons": [
+    {
+      "reason_label": "Delivery Delay",
+      "confidence": 0.88,
+      "extracted_reason_text": "The package arrived later than expected.",
+      "reason_intent": "complaint",
+      "theme": "Logistics",
+      "sentiment_score": -0.7,
+      "emotions": {
+        "anger": 0.6,
+        "frustration": 0.4
+      },
+      "evidence": ["Arrived 3 days late", "No delivery updates"],
+      "suggested_action": "Improve delivery tracking and timelines",
+      "entities": [
+        {
+          "extracted_entity_text": "delivery service",
+          "canonical_entity_label": "Logistics Provider",
+          "entity_category": "Service",
+          "match_score": 0.91
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "human_review_needed": true,
+    "trigger_reasons": ["High negative sentiment", "Delivery issue"]
+  }
+}
